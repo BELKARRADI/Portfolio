@@ -44,89 +44,92 @@ const Resume = (props) => {
 
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
-    { label: "Professional Experience", logoSrc: "work-history.svg" },
-    { label: "Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
+    { label: "Formation", logoSrc: "education.svg" },
+    { label: "Expérience Professionnelle", logoSrc: "work-history.svg" },
+    { label: "Compétences", logoSrc: "programming-skills.svg" },
+    { label: "Projets", logoSrc: "projects.svg" },
   ];
 
   //here we have
   const programmingSkillsDetails = [
     { skill: "HTML" },
     { skill: "CSS" },
+    { skill: "tailwind" },
     { skill: "JavaScript" },
-    { skill: "PHP" },
     { skill: "React JS" },
     { skill: "React Native" },
+    { skill: "JAVA" },
+    { skill: "Python" },
+    { skill: "Spring Boot" },
+    { skill: "Flask" },
     { skill: "Laravel" },
     { skill: "Express JS" },
-    { skill: "Node JS" },
-    { skill: "Oracle" },
     { skill: "MySQL" },
-    { skill: "Python" },
-    { skill: "java" },
-    { skill: "Mongo Db" },
+    { skill: "Oracle Database" },
+    { skill: "PL/SQL" },
+    { skill: "MongoDb" },
+    { skill: "Hbase" },
+    { skill: "Microsoft Power BI" },
+    { skill: "Talend" },
+    { skill: "Hadoop" },
+   
   ];
 
   const projectsDetails = [
     {
-      title: "End-of-year project (PFA) | ArtiZone",
-      duration: { fromDate: "2023"},
+      title: "Projet de fin d'année (PFA II) | ArtiZone",
+      duration: { fromDate: "2024" },
       description:
-        "Design and development of a social intermediary platform for artisans using the MERN Stack.",
-      subHeading: "Technologies Used:  Mongo Db, Express JS, React JS, Node JS",
+        "Conception et Développement d'une Application Web Intégrant l'Intelligence Artificielle pour une Gestion Avancée de l'Énergie Générée par les Panneaux Photovoltaïques.",
+      subHeading: "Technologies utilisées :  Python, Flask, React JS, Mongo Db",
     },
     {
-      title: "Mobile Application | ProfSwap",
-      duration: { fromDate: "2023", toDate: "2023" },
-      description: "design and dev of A mobile application has been developed to facilitate the search for university professors interested in job exchanges.",
-      subHeading:  "Technologies Used:  Mongo Db, Express JS, React Native, Node JS",
+      title: "Projet de fin d'année (PFA I) | ArtiZone",
+      duration: { fromDate: "2023" },
+      description:
+        "Conception et développement d'une plateforme d'intermédiation entre les clients et les artisans en utilisant la pile MERN",
+      subHeading: "Technologies utilisées :  Mongo Db, Express JS, React JS, Node JS",
     },
     {
-      title: "Web and mobile restaurant management application  ",
-      duration: { fromDate: "2023", toDate: "2023" },
+      title: "Application Mobile | ProfSwap",
+      duration: { fromDate: "2023" },
+      description: "Conception et développement d'une application mobile pour faciliter la recherche de professeurs universitaires intéressés par des échanges de postes.",
+      subHeading: "Technologies utilisées :  Mongo Db, Express JS, React Native, Node JS",
+    },
+    {
+      title: "Application de gestion de restaurant web et mobile",
+      duration: { fromDate: "2023" },
       description:
-      "A restaurant management application developed using the MERN stack for both web and mobile versions, with the aim of facilitating restaurant search for customers.",
+        "Une application de gestion de restaurant développée en utilisant la pile MERN pour les versions web et mobile, dans le but de faciliter la recherche de restaurants pour les clients.",
       subHeading:
-      "Technologies Used:  Mongo Db, Express JS, React Native,React JS, Node JS ",
+        "Technologies utilisées :  Mongo Db, Express JS, React Native, React JS, Node JS ",
     },
-    {
-      title: "Managing routes App ",
-      duration: { fromDate: "2022", toDate: "2022" },
-      description:
-        "An application has been developed to simplify the search for the shortest route between all Shell stations, taking into account both distances and traffic constraints.",
-      subHeading: "Technologies Used: Python, PyQt5",
-    },
-  
   
   ];
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"State engineer diploma"}
-        subHeading={"National School of Applied Sciences (ENSA), El Jadida"}
+        heading={"Diplôme d'ingénieur d'État"}
+        subHeading={"École Nationale des Sciences Appliquées (ENSA), El Jadida"}
         fromDate={"2022"}
         toDate={"2025"}
-        description={"Field : Computer engineering and emerging technologies"}
+        description={"Filière : Génie informatique et technologies émergentes"}
       />
 
-    
       <ResumeHeading
-        heading={
-          "Preparatory classes"
-        }
-        subHeading={"National School of Applied Sciences (ENSA), El Jadida"}
+        heading={"Classes préparatoires"}
+        subHeading={"École Nationale des Sciences Appliquées (ENSA), El Jadida"}
         fromDate={"2020"}
         toDate={"2022"}
-        
       />
+
       <ResumeHeading
-        heading={"Baccalaureate"}
+        heading={"Baccalauréat"}
         subHeading={"Newton International School, Mohammedia"}
         fromDate={"2019"}
         toDate={"2020"}
-        description={"Field : Scientific Baccalaureate, French option"}
+        description={"Filière : Baccalauréat  Sciences Physiques, option Française"}
       />
     </div>,
 
@@ -134,19 +137,34 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Observation internship"}
+          heading={"Stage de fin d'année"}
+          fromDate={"08/2023"}
+          toDate={"09/2023"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+          Conception et développement d'une plateforme visant à numériser les tickets de restauration afin de simplifier le processus de remboursement au sein de l'entreprise "Librairie Papeterie Nationale".          <br/>Technologies utilisées : PHP, Laravel, MySQL, React.js, Bootstrap
+          </span>
+        </div>
+        <div className="experience-description">
+
+        </div>
+      </div>
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Stage d'observation"}
           fromDate={"07/2022"}
           toDate={"08/2022"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-          I completed an observation internship at the testing department of a multinational company called "Lear" located in Sala El Jadida.
-          </span>
+          J'ai effectué un stage d'observation au sein du département de tests d'une entreprise multinationale "Lear", un acteur majeur du secteur automobile, située à Sala El Jadida.          </span>
         </div>
         <div className="experience-description">
-          
+
         </div>
       </div>
+      
     </div>,
 
     /* PROGRAMMING SKILLS */
@@ -228,7 +246,7 @@ const Resume = (props) => {
   return (
     <div className="resume-container screen-container " id={props.id || ""}>
       <div className="resume-content">
-        <ScreenHeading title={"Resume"} subHeading={"My formal Bio Details"} />
+        <ScreenHeading title={"CV"} subHeading={"Mes informations biographiques formelles"} />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

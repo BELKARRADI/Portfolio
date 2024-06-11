@@ -6,23 +6,25 @@ import ContactMe from "../PortfolioContainer/ContactMe/ContactMe";
 
 export const TOTAL_SCREENS = [
   {
-    screen_name: "Home",
+    screen_name: "Accueil",
+    
+    
     component: Home,
   },
   {
-    screen_name: "About Me",
+    screen_name: "À propos de moi",
     component: AboutMe,
   },
   {
-    screen_name: "Resume",
+    screen_name: "CV",
     component: Resume,
   },
   {
-    screen_name: "Certificates",
+    screen_name: "Certificats",
     component: Testimonial,
   },
   {
-    screen_name: "Contact Me",
+    screen_name: "Me contacter",
     component: ContactMe,
   },
 ];

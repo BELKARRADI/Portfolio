@@ -11,6 +11,8 @@ import javaFx from "../../img/Certificates/javaFx.png";
 import SQL from "../../img/Certificates/SQL.png";
 import shape from "../../img/Certificates/shape-bg.png";
 import wordpress from "../../img/Certificates/wordPress.png";
+import aws1 from "../../img/Certificates/AWS1.png";
+import aws2 from "../../img/Certificates/AWS2.png";
 
 export default function certificates(props) {
   let fadeInScreenHandler = (screen) => {
@@ -46,8 +48,8 @@ export default function certificates(props) {
   return (
     <div>
       <ScreenHeading
-        title={"Certificates"}
-        subHeading={"The certificates I got"}
+        title={"Certificats"}
+        subHeading={"Les certificats que j'ai obtenus"}
       />
       <section className="certificates-section" id={props.id || ""}>
         <div className="container">
@@ -78,6 +80,23 @@ export default function certificates(props) {
                 <div className="certi-item">
                   <div className="certi-img">
                     <img src={wordpress} alt=""/>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="col-lg-12">
+                <div className="certi-item">
+                  <div className="certi-img">
+                    <img src={aws2} alt=""/>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-12">
+                <div className="certi-item">
+                  <div className="certi-img">
+                    <img src={aws2} alt=""/>
                   </div>
                 </div>
               </div>

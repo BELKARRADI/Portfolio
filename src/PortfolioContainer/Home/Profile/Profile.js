@@ -11,11 +11,13 @@ const Profile = () => {
   const [index, setIndex] = useState(0);
   const [text, setText] = useState('');
   const phrases = [
-    "Computer Engineering Student💻",
-    "Full Stack Developer💻",
-    "MERN Stack Developer💻",
-    "React/React Native Developer📱",
-  ];
+    "Étudiant en Génie Informatique et Technologies Émergentes",
+    "Développeur Full Stack💻",
+    "Développeur MERN Stack💻",
+    "Développeur Mobile📱",   
+    
+   ];
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -45,7 +47,7 @@ const Profile = () => {
           <div className="profile-details-name">
             <span className="primary-text">
               {" "}
-              Hello, I'm <span className="highlighted-text">BELKARRADI Mohammed</span>
+              <span className="highlighted-text">BELKARRADI Mohammed</span>
             </span>
           </div>
           <div className="profile-details-role">
@@ -54,17 +56,17 @@ const Profile = () => {
               <h1>{text}</h1>
 
               <span className="profile-role-tagline">
-                Welcome to my Portfolio Website! I'm sharing with you my passion for IT and software development 
-              </span>
+              Bienvenue sur mon portfolio ! Je suis ravi de partager avec vous ma passion pour l'informatique et le développement de logiciels.              </span>
             </span>
           </div>
           <div className="profile-options">
             <button className="btn primary-btn" onClick={onContactClick}>
               {" "}
-              Contact Me
+               Me contacter
+
             </button>
              <a href="resume.pdf" download="CV_BELKARRADI_Mohammed.pdf">
-              <button className="btn highlighted-btn">Get My Resume</button>
+              <button className="btn highlighted-btn">Obtenir mon CV</button>
             </a> 
           </div>
         </div>

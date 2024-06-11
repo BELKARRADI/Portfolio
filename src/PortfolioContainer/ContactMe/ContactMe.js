@@ -58,7 +58,7 @@ export default function ContactMe(props) {
 
   return (
     <div className="main-container" id={props.id || ""}>
-      <ScreenHeading subHeading={"Lets Keep In Touch"} title={"Contact Me"} />
+      <ScreenHeading subHeading={"Restons en contact"} title={"Me contacter"} />
       <div className="central-form">
         <div className="col">
           <h2 className="title">
