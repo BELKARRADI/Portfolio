@@ -13,6 +13,8 @@ import shape from "../../img/Certificates/shape-bg.png";
 import wordpress from "../../img/Certificates/wordPress.png";
 import aws1 from "../../img/Certificates/AWS1.png";
 import aws2 from "../../img/Certificates/AWS2.png";
+import bd1 from "../../img/Certificates/BIGDATA1.png";
+import bd2 from "../../img/Certificates/BIGDATA2.png";
 
 export default function certificates(props) {
   let fadeInScreenHandler = (screen) => {
@@ -97,6 +99,22 @@ export default function certificates(props) {
                 <div className="certi-item">
                   <div className="certi-img">
                     <img src={aws2} alt=""/>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-12">
+                <div className="certi-item">
+                  <div className="certi-img">
+                    <img src={bd1} alt=""/>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-12">
+                <div className="certi-item">
+                  <div className="certi-img">
+                    <img src={bd2} alt=""/>
                   </div>
                 </div>
               </div>
